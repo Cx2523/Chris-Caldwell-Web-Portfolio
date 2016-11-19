@@ -1,7 +1,7 @@
 body{
-  background-color: white;
+  background-color: black;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
 }
 
 /*.lower-section{
@@ -63,10 +63,10 @@ header{
 }
 
 .hexgrid{
-  width: 60vw;
-  height:60vh;
+  width: 70vw;
+  height:70vh;
   max-height:500px;
   max-width:500px;
-  margin: 30vh auto 10vh;
+  margin: 15vh auto 5vh;
   opacity: 0.90;
 }
