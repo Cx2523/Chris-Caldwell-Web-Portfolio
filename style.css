@@ -26,7 +26,7 @@ body{
   background-size: contain;
   background-repeat: no-repeat;
 
-  background-image: url("./space.jpeg");
+  background-image: url("./space with person.jpeg");
 
   /*background-image: url('http://cdn.pcwallart.com/images/beautiful-night-sky-photography-wallpaper-4.jpg');*/
   /*background-image: url('http://66.media.tumblr.com/2914b04cff938d25123bcf96df9ba3a0/tumblr_ny3qc7orhE1utfg94o1_1280.jpg');*/
@@ -70,7 +70,7 @@ header{
   height:70vh;
   max-height:500px;
   max-width:500px;
-  margin: 15vh auto 5vh;
+  margin: 8vh auto 5vh;
   opacity: 0.90;
 }
 
