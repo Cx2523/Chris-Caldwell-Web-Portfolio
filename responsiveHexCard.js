@@ -13,6 +13,9 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "perspective" : "800px",
     "-webkit-clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
     "clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
+    "-moz-clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
+    "-o-clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
+    "-ms-clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
     "position" : "relative",
     "display" : "inline-block"
   });
@@ -22,6 +25,9 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "width" : "100%",
     "-webkit-clip-path" : "inherit",
     "clip-path" : "inherit",
+    "-moz-clip-path" : "inherit",
+    "-o-clip-path" : "inherit",
+    "-ms-clip-path" : "inherit",
     "transform-style" : "preserve-3d",
     "transition" : "transform 2s",
     "position" : "absolute"
@@ -32,6 +38,9 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "position": "absolute",
     "-webkit-clip-path": "inherit",
     "clip-path" : "inherit",
+    "-moz-clip-path" : "inherit",
+    "-o-clip-path" : "inherit",
+    "-ms-clip-path" : "inherit",
     "width": "100%",
     "height": "100%",
     "backface-visibility": "hidden",
@@ -43,6 +52,9 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "width":"100%",
     "-webkit-clip-path":"inherit",
     "clip-path" : "inherit",
+    "-moz-clip-path" : "inherit",
+    "-o-clip-path" : "inherit",
+    "-ms-clip-path" : "inherit",
     "background-color": frontColor,
     "position": "absolute"
   });
@@ -52,6 +64,9 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "width":"100%",
     "-webkit-clip-path":"inherit",
     "clip-path" : "inherit",
+    "-moz-clip-path" : "inherit",
+    "-o-clip-path" : "inherit",
+    "-ms-clip-path" : "inherit",
     "background-color": backColor,
     "position": "absolute",
     "transform" : "rotateY(180deg)"
