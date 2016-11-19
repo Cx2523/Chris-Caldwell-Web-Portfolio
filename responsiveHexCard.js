@@ -12,6 +12,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "width" : width,
     "perspective" : "800px",
     "-webkit-clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
+    "clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
     "position" : "relative",
     "display" : "inline-block"
   });
@@ -20,6 +21,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "height" : "100%",
     "width" : "100%",
     "-webkit-clip-path" : "inherit",
+    "clip-path" : "inherit",
     "transform-style" : "preserve-3d",
     "transition" : "transform 2s",
     "position" : "absolute"
@@ -29,6 +31,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "margin": "0",
     "position": "absolute",
     "-webkit-clip-path": "inherit",
+    "clip-path" : "inherit",
     "width": "100%",
     "height": "100%",
     "backface-visibility": "hidden",
@@ -39,6 +42,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "height":"100%",
     "width":"100%",
     "-webkit-clip-path":"inherit",
+    "clip-path" : "inherit",
     "background-color": frontColor,
     "position": "absolute"
   });
@@ -47,6 +51,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "height":"100%",
     "width":"100%",
     "-webkit-clip-path":"inherit",
+    "clip-path" : "inherit",
     "background-color": backColor,
     "position": "absolute",
     "transform" : "rotateY(180deg)"
