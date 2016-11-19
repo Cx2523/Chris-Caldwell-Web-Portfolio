@@ -4,16 +4,18 @@ body{
   height: 100vh;
 }
 
-/*.lower-section{
+.lower-section{
   position:relative;
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   font-size: 50px;
   text-align: center;
-  opacity: 0;
-  background-image: url('http://www.pacifymind.net/wp-content/uploads/11304a-salt-lake-city-skyline-high-definion-image.jpg');
-}*/
+  background-image: url('./SLC.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
 
 .upper-section{
   width:100vw;
