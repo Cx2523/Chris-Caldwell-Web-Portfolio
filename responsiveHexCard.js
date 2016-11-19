@@ -17,8 +17,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "-o-clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
     "-ms-clip-path" : "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
     "position" : "relative",
-    "display" : "inline-block",
-    "background-color" : "transparent"
+    "display" : "inline-block"
   });
 
   $('#' + classNames.hexCard).css({
@@ -31,8 +30,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "-ms-clip-path" : "inherit",
     "transform-style" : "preserve-3d",
     "transition" : "transform 2s",
-    "position" : "absolute",
-    "background-color" : "transparent"
+    "position" : "absolute"
   });
 
   $('#' + classNames.hexCard + ' figure').css({
@@ -46,8 +44,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "width": "100%",
     "height": "100%",
     "backface-visibility": "hidden",
-    "display":"block",
-    "background-color" : "transparent"
+    "display":"block"
   });
 
   $('#' + classNames.hexCard + ' .' + classNames.frontSide).css({

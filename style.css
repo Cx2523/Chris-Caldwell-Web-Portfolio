@@ -17,12 +17,16 @@ body{
 
 .upper-section{
   width:100vw;
-  height:100%;
+  height:100vh;
 
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-blend-mode: luminosity;
 
-  background-image: url('http://cdn.pcwallart.com/images/beautiful-night-sky-photography-wallpaper-4.jpg');
+  background-image: url("./space.jpeg");
+
+  /*background-image: url('http://cdn.pcwallart.com/images/beautiful-night-sky-photography-wallpaper-4.jpg');*/
   /*background-image: url('http://66.media.tumblr.com/2914b04cff938d25123bcf96df9ba3a0/tumblr_ny3qc7orhE1utfg94o1_1280.jpg');*/
 
   /*background-image: url('http://www.pacifymind.net/wp-content/uploads/11304a-salt-lake-city-skyline-high-definion-image.jpg');*/
@@ -49,20 +53,21 @@ header{
 .row2{
   width:100%;
   height:33.33%;
-  /*margin-left:102px;
-  margin-top: -56px;*/
+  margin-left: 16.65%;
+  margin-top: -8%;
 }
 .row3{
   width:100%;
   height:33.33%;
-  /*margin-left:204px;
-  margin-top: -56px;*/
+  margin-left: 33.33%;
+  margin-top: -8%;
 }
 
 .hexgrid{
-  border: 2px solid black;
-  width: 50vw;
-  height:50vw;
-  margin:auto;
+  width: 60vw;
+  height:60vh;
+  max-height:500px;
+  max-width:500px;
+  margin: 30vh auto 10vh;
   opacity: 0.90;
 }
