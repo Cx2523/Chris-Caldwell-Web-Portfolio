@@ -14,6 +14,7 @@ body{
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  /*background-color:#537BBA;*/
 
 }
 
@@ -69,6 +70,10 @@ header{
   height:70vh;
   max-height:500px;
   max-width:500px;
-  margin: 20vh auto 5vh;
+  margin: 15vh auto 5vh;
   opacity: 0.90;
+}
+
+.lower-section div{
+  padding-top: 20%;
 }
