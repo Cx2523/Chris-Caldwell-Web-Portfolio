@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: white;
   width: 100vw;
   height: 100vw;
 }
@@ -22,7 +22,6 @@ body{
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
 
   background-image: url("./space.jpeg");
 

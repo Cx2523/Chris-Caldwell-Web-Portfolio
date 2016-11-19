@@ -17,11 +17,11 @@ $(document).ready(function(){
   // addHexPic('hex-card-container-5',false, 'http://vignette2.wikia.nocookie.net/anchorman/images/b/b9/Anchorman_ron_burgundy_a_p.jpg/revision/latest?cb=20131211013425');
   // addHexPic('hex-card-container-2', 'http://twotribes.com/images/sized/images/uploads/berichten/373x2462-373x246.png');
 
-  $(window).scroll(function(){
-    $('.lower-section').css({
-        'opacity' : $(window).scrollTop() / ($('.lower-section').offset().top - 50)
-        });
-  });
+  // $(window).scroll(function(){
+  //   $('.lower-section').css({
+  //       'opacity' : $(window).scrollTop() / ($('.lower-section').offset().top - 50)
+  //       });
+  // });
 
 });
 
