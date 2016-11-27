@@ -1,46 +1,98 @@
 body{
   background-color: black;
-  width: 100vw;
-  height: 100vh;
+  width:100vw;
+  height:100vh;
+  border: 4px black dashed;
+  margin:0px;
 }
 
-.lower-section{
+.flip-container{
   position:relative;
-  width: 100vw;
-  height: 100vh;
-  font-size: 50px;
-  text-align: center;
+  perspective: 7000px;
+  width:100%;
+  height:100%;
+}
+
+#cube{
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+  width:100%;
+  height:100%;
+}
+
+#cube > section{
+  display:block;
+  position:absolute;
+  border: 2px solid black;
+  backface-visibility: hidden;
+  width:100%;
+  height:100%;
+  margin: auto;
+}
+
+#cube .upper-section{
+  transform: translateZ(50vh) rotateX(0deg);
+  background-color: black;
+  /*transform: translateZ();*/
+  width:100%;
+  height:100%;
+
+  position:absolute;
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-image: url("./space with person.jpeg");
+  transition: opacity 2s;
+}
+
+#cube .lower-section{
+  transform: translateY(50vh) rotateX(-90deg);
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  /*position:absolute;*/
   background-image: url('./SLC.jpg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  /*background-color:#537BBA;*/
+  transition: opacity 2s;
+}
 
+.rotate{
+  transform: rotateX(90deg);
+}
+
+/*.lower-section{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  background-image: url('./SLC.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .upper-section{
-  width:100vw;
-  height:100vh;
+  width:100%;
+  height:100%;
 
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-
   background-image: url("./space with person.jpeg");
 
-  /*background-image: url('http://cdn.pcwallart.com/images/beautiful-night-sky-photography-wallpaper-4.jpg');*/
-  /*background-image: url('http://66.media.tumblr.com/2914b04cff938d25123bcf96df9ba3a0/tumblr_ny3qc7orhE1utfg94o1_1280.jpg');*/
+  position:absolute;
+}*/
 
-  /*background-image: url('http://www.pacifymind.net/wp-content/uploads/11304a-salt-lake-city-skyline-high-definion-image.jpg');*/
-}
-
-header{
+#head-links{
   width: 100%;
-  height:100px;
+  height:10%;
   display:flex;
   color: white;
   justify-content: space-around;
   font:15px monospace;
+  margin: 2% auto;
 }
 
 .flipped {
@@ -66,14 +118,48 @@ header{
 }
 
 .hexgrid{
-  width: 70vw;
+  width:70vw;
   height:70vh;
   max-height:500px;
   max-width:500px;
-  margin: 8vh auto 5vh;
+  margin: 2vh auto 2vh;
   opacity: 0.90;
 }
 
-.lower-section div{
-  padding-top: 20%;
+#skills-box{
+  width: 30vw;
+  height: 50vh;
+  margin-top: 5vh;
+  margin-left: -50vw;
+  /*margin-top: 10%;*/
+  border: 2px black solid;
+  border-radius: 20px;
+  font-size: 2vmin;
+  position: relative;
+  font-family: monospace;
+  transition: margin 2s;
+}
+
+#pic{
+  width:20vw;
+  height:35vh;
+  background-image:url("./Kip_Dynamite.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position:relative;
+  float:right;
+  right: -15vw;
+  border: 2px solid black;
+  transition: right 2s;
+}
+
+#bio-box{
+  width: 30vw;
+  height: 40vh;
+  margin-left: 10vw;
+  float: left;
+  position: relative;
+  font-size: 2vmin;
+  color: white;
+  font-family: monospace;
 }

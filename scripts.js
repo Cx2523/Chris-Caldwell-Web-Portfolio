@@ -17,13 +17,94 @@ $(document).ready(function(){
   // addHexPic('hex-card-container-5',false, 'http://vignette2.wikia.nocookie.net/anchorman/images/b/b9/Anchorman_ron_burgundy_a_p.jpg/revision/latest?cb=20131211013425');
   // addHexPic('hex-card-container-2', 'http://twotribes.com/images/sized/images/uploads/berichten/373x2462-373x246.png');
 
-  $(window).scroll(function(){
+  $('.upper-section').on('click',function(){
+    $('#cube').toggleClass('rotate');
+    $('#skills-box').css({
+      'margin-left': '10vw'
+    });
+    $('#pic').css({
+      'right': '15vw'
+    });
+    $('.upper-section').css({
+      'opacity':'0'
+    });
     $('.lower-section').css({
-        'opacity' : $(window).scrollTop() / ($('.lower-section').offset().top - 50)
-        });
+      'opacity':'100'
+    });
+
   });
 
+  $('.lower-section').on('click',function(){
+    $('#cube').toggleClass('rotate');
+    $('#skills-box').css({
+      'margin-left': '-10vw'
+    });
+    $('#pic').css({
+      'right': '-15vw'
+    });
+    $('.lower-section').css({
+      'opacity':'0'
+    });
+    $('.upper-section').css({
+      'opacity':'100'
+    });
+
+  });
+
+
+  // var angle = 0;
+  // $('#cube').on('mousewheel', function(event) {
+  //   console.log("DeltaX" + event.deltaX, "DeltaY" + event.deltaY, "DeltaFactor" +
+  //   event.deltaFactor);
+  //
+  //   function rotateAngle(deltaY){
+  //
+  //     if (angle >= 0 || angle <= 90){
+  //       angle = angle + deltaY
+  //     }
+  //     return angle;
+  //
+  //   }
+
+
+    // $('#cube').css({
+    //   'transform' : 'rotateX(' + rotateAngle(event.deltaY) + 'deg)'
+    // });
+
+  // });
+
+
+
+
+
+
+  // $(window).scroll(function(){
+  //     var scrollRatio = $(window).scrollTop() / $('.lower-section').offset().top;
+  //
+  //     $('.lower-section').css({
+  //         'opacity' : $(window).scrollTop() / ($('.lower-section').offset().top - 50)
+  //         });
+  //
+  //     $('.upper-section').css({
+  //         'opacity' : 1 - $(window).scrollTop() / ($('.lower-section').offset().top - 50)
+  //         });
+  //
+  //     $('#skills-box').css({
+  //       'margin-left': 40 * $(window).scrollTop() / ($('.lower-section').offset().top) - 30 + 'vw'
+  //     });
+  //
+  //     $('#pic').css({
+  //       'right': 40 * $(window).scrollTop() / ($('.lower-section').offset().top) - 25 + 'vw'
+  //     });
+  //
+  //     $('#bio-box').css({
+  //       'bottom': -40 + 40 * $(window).scrollTop() / ($('.lower-section').offset().top) + 'vw'
+  //     });
+  //
+  //   });
+//
 });
+
 
 function addHexPic(hexClass, frontSidePic, backSidePic){
   var shapeId = hexClass.slice(18, hexClass.length);
