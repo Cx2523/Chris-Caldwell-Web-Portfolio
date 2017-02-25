@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <!-- <link href="css/hover-min.css" rel="stylesheet"> -->
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
 
@@ -11,8 +14,8 @@
       <div id=cube>
           <section class="upper-section">
 
-            <section id=head-links>
-              <div class="links">linkedIn</div>
+            <section id="head-links">
+              <div class="links"><a href="https://www.linkedin.com/in/christopher-caldwell-136b3a132" target="_blank">linkedIn</a></div>
               <div class="links">gitHub</div>
               <div class="links">useBootstrapforthisstuff</div>
               <div class="links">do some cool fonts</div>
@@ -33,26 +36,37 @@
               </section>
             </section>
 
+            <i id="down-link" class="icon-chevron-down icon-2x"></i>
+
           </section>
 
         <section class="lower-section">
-          <div id="skills-box">
-            <!--Make this like the tab card done in DevMountain  -->
-            <ul>SKILLS
-              <li>Bo Staff</li>
-              <li>Nunchakus</li>
-              <li>Procrastination</li>
-              <li>Agility</li>
-              <li>Broad-sword</li>
-              <li>Alchemy</li>
-              <li>Fire magic</li>
-              <li>Boomerang</li>
-            </ul>
+          <header>
+            <i id="up-link" class="icon-chevron-up icon-2x"></i>
+          </header>
 
-          </div>
-          <div id="bio-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-          <div id="pic"></div>
+          <section class="left-column">
+            <div id="skills-box">
+              <div class="skills" id="html5"></div><!--
+           --><div class="skills" id="css3"></div><!--
+           --><div class="skills" id="javascript"></div><!--
+           --><div class="skills" id="bootstrap"></div><!--
+           --><div class="skills" id="d3"></div>
 
+           <!--mongo, node, express, ruby-->
+
+            </div>
+
+            <div id="bio-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+
+          </section>
+
+
+          <section class="right-column">
+            <div id="pic"></div>
+          </section>
+
+          <footer></footer>
         </section>
 
       </div>
@@ -66,5 +80,6 @@
     <!-- <script src="./jquery.mousewheel.js"></script> -->
     <script src="./responsiveHexCard.js"></script>
     <script src="./scripts.js"></script>
+
   </body>
 </html>

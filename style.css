@@ -1,24 +1,29 @@
 body{
-  background-color: black;
+  /*background-color: black;*/
+  background-image: radial-gradient(blue, white);
   width:100vw;
   height:100vh;
-  border: 4px black dashed;
   margin:0px;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-overflow-scrolling: auto;
 }
 
 .flip-container{
   position:relative;
-  perspective: 7000px;
+  perspective: 1500px;
+  /*perspective-origin: center center;*/
   width:100%;
   height:100%;
 }
 
 #cube{
-  position: absolute;
+  position: relative;
   transform-style: preserve-3d;
-  transition: transform 2s;
-  width:100%;
+  transform-origin: center center -50vh;
+  width:90%;
   height:100%;
+  margin: 0 auto;
+
 }
 
 #cube > section{
@@ -28,35 +33,40 @@ body{
   backface-visibility: hidden;
   width:100%;
   height:100%;
-  margin: auto;
+  /*margin: auto;*/
 }
 
 #cube .upper-section{
-  transform: translateZ(50vh) rotateX(0deg);
+  transform: translateZ(0vh) rotateX(0deg);
   background-color: black;
   /*transform: translateZ();*/
   width:100%;
   height:100%;
 
+  border:2px solid white;
+
   position:absolute;
   background-position: center;
   background-size:contain;
   background-repeat: no-repeat;
-  background-image: url("./space with person.jpeg");
-  transition: opacity 2s;
+  background-image: url("./space.jpeg");
+  /*transition: opacity 2s;*/
+
 }
 
 #cube .lower-section{
-  transform: translateY(50vh) rotateX(-90deg);
-  background-color: black;
+  transform: translateZ(-50vh) translateY(50vh) rotateX(-90deg);
+  /*background-color: black;*/
   width: 100%;
   height: 100%;
   /*position:absolute;*/
   background-image: url('./SLC.jpg');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  transition: opacity 2s;
+  /*transition: opacity 2s;*/
+  box-sizing: border-box;
+  border: 5px solid orange;
 }
 
 .rotate{
@@ -91,8 +101,20 @@ body{
   display:flex;
   color: white;
   justify-content: space-around;
-  font:15px monospace;
+  font:15px;
   margin: 2% auto;
+}
+
+.links{
+  width: 20%;
+  text-align: center;
+  font-size:1.3em;
+}
+
+.links:hover{
+  color: #61CBE0;
+  font-size:1.5em;
+
 }
 
 .flipped {
@@ -122,44 +144,89 @@ body{
   height:70vh;
   max-height:500px;
   max-width:500px;
-  margin: 2vh auto 2vh;
+  margin: 8vh auto;
   opacity: 0.90;
 }
 
-#skills-box{
-  width: 30vw;
-  height: 50vh;
-  margin-top: 5vh;
-  margin-left: -50vw;
-  /*margin-top: 10%;*/
-  border: 2px black solid;
-  border-radius: 20px;
-  font-size: 2vmin;
-  position: relative;
-  font-family: monospace;
-  transition: margin 2s;
+#down-link{
+  position:absolute;
+  bottom:5%;
+  width:100%;
+  height:5%;
+  /*margin:auto;*/
+  color:white;
+  text-align:center;
+  background-color: transparent;
+}
+
+header{
+  width:100%;
+  height:5%;
+  text-align: center;
+  background-color: transparent;
+}
+
+#up-link{
+  color:white;
+}
+
+
+/*#foot-links:hover{
+  background-color: #209DD8;
+  opacity: .5;
+  color:black;
+  font-size:16px;
+}*/
+
+.left-column{
+  width:45%;
+  border:2px solid red;
+  height:90%;
+  float:left;
+  margin:2%;
+}
+
+.right-column{
+  width:45%;
+  border:2px solid yellow;
+  float:left;
+  height:90%;
+  position:relative;
+  margin:2%;
 }
 
 #pic{
-  width:20vw;
-  height:35vh;
-  background-image:url("./Kip_Dynamite.jpg");
-  background-size: contain;
+  min-height:250px;
+  min-width: 250px;
+  background-image:url("./me 2.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
-  position:relative;
-  float:right;
-  right: -15vw;
-  border: 2px solid black;
-  transition: right 2s;
+  position:absolute;
+  right: -300px;
+  margin:2%;
+  bottom:0;
+
 }
 
-#bio-box{
-  width: 30vw;
-  height: 40vh;
-  margin-left: 10vw;
-  float: left;
-  position: relative;
-  font-size: 2vmin;
-  color: white;
-  font-family: monospace;
+#skills-box{
+  width: 100%;
+  height: 80vh;
+  top: 5vh;
+  left: -50vw;
+  margin-top: 10%;
+  border: 2px white solid;
+  border-radius: 20px;
+  /*transition: left 2s;*/
+  display:flex;
+  align-content: space-between;
+}
+
+.skills{
+  height:100px;
+  width:250px;
+  /*background-color: red;
+  border: 2px solid black;*/
+  margin:2px;
+  background-size: cover;
+  background-position: center;
 }
