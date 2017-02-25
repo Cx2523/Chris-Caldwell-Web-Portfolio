@@ -1,23 +1,23 @@
 $(document).ready(function(){
-
+  //d = sqrt 3 /2 D
   // console.log($(window).width());
   // console.log($(window).height());
 
-  respHexCard("hex-container-1", "33%", "black", "#2C518D");
-  respHexCard("hex-container-2", "33%", "green", "orange");
-  respHexCard("hex-container-3", "33%", "#403F52", "yellow");
-  respHexCard("hex-container-4", "33%", "turquoise", "black");
-  respHexCard("hex-container-5", "33%", "lightblue", "magenta");
-  respHexCard("hex-container-6", "33%", "aquamarine", "pink");
+  respHexCard("hex-container-1", "33%", "gray", "gray");
+  respHexCard("hex-container-2", "33%", "gray", "gray");
+  respHexCard("hex-container-3", "33%", "gray", "gray");
+  respHexCard("hex-container-4", "33%", "transparent", "transparent");
+  respHexCard("hex-container-5", "33%", "gray", "gray");
+  respHexCard("hex-container-6", "33%", "gray", "gray");
+  respHexCard("hex-container-7", "33%", "gray", "gray");
 
-  $('#hex-card-1, #hex-card-2, #hex-card-3, #hex-card-4, #hex-card-5, #hex-card-6' ).on('click',function(){
+  $('#hex-card-1, #hex-card-2, #hex-card-3, #hex-card-5, #hex-card-6, #hex-card-7').on('click',function(){
     $(this).toggleClass('flipped');
   });
 
-  addHexPic('hex-container-1','./code.jpg', 'http://vignette2.wikia.nocookie.net/anchorman/images/b/b9/Anchorman_ron_burgundy_a_p.jpg/revision/latest?cb=20131211013425');
-  addHexPic('hex-container-2', './code.jpg', './code.jpg');
-
   addHexPic('hex-container-3', './screenshot 2.jpg', './code.jpg');
+
+  $('.front-4').append('<div class="intro-text">Hello World.<br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>');
 
   //click rotation
   $('#down-link').on('click', downTransition);
@@ -55,7 +55,7 @@ function scrollDownTransition(y){
   // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
     $('#skills-box').css('left', 5 * y / 90 + 'vw');
-    $('#pic').css('right', 300 * y / 90 - 300 + 'px');
+    $('#pic').css('right', 500 * y / 90 - 500 + 'px');
     $('.upper-section').css('opacity', 1 - y / 90);
     $('.lower-section').css('opacity', y / 90);
   }
@@ -64,7 +64,7 @@ function scrollUpTransition(y){
   // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
     $('#skills-box').css('left', 5 * y / 90 + 'vw');
-    $('#pic').css('right', 300 * y / 90 - 300 + 'px');
+    $('#pic').css('right', 500 * y / 90 - 500 + 'px');
     $('.upper-section').css('opacity', 1 - y / 90);
     $('.lower-section').css('opacity', y / 90);
   }
@@ -86,7 +86,7 @@ function upTransition(){
   });
   $('#pic').css({
     'transition':'right 2s',
-    'right': '-300px'
+    'right': '-500px'
   });
   $('.lower-section').css({
     'transition':'opacity 2s',
