@@ -21,6 +21,7 @@ $(document).ready(function(){
 
   //click rotation
   $('#down-link').on('click', downTransition);
+  $('.more-info').on('click', downTransition);
   $('#up-link').on('click', upTransition);
 
   //scrolling rotation
@@ -54,7 +55,7 @@ $(document).ready(function(){
 function scrollDownTransition(y){
   // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
-    $('#skills-box').css('left', 5 * y / 90 + 'vw');
+    $('#skills-box').css('left', y / 90 * 60 - 60 + '%');
     $('#pic').css('right', 500 * y / 90 - 500 + 'px');
     $('.upper-section').css('opacity', 1 - y / 90);
     $('.lower-section').css('opacity', y / 90);
@@ -63,15 +64,11 @@ function scrollDownTransition(y){
 function scrollUpTransition(y){
   // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
-    $('#skills-box').css('left', 5 * y / 90 + 'vw');
+    $('#skills-box').css('left', y / 90 * 60 - 60  + '%');
     $('#pic').css('right', 500 * y / 90 - 500 + 'px');
     $('.upper-section').css('opacity', 1 - y / 90);
     $('.lower-section').css('opacity', y / 90);
   }
-
-
-
-
 
 
 function upTransition(){
@@ -82,7 +79,7 @@ function upTransition(){
 
   $('#skills-box').css({
     'transition':'left 2s',
-    'left': '-50vw'
+    'left': '-60%'
   });
   $('#pic').css({
     'transition':'right 2s',
@@ -118,7 +115,7 @@ function downTransition(){
   $('#cube').toggleClass('rotate');
   $('#skills-box').css({
     'transition':'left 2s',
-    'left':'5vw'
+    'left':'0'
   });
   $('#pic').css({
     'transition':'right 2s',

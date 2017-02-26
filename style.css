@@ -50,7 +50,7 @@ div,section{
   border:3px solid black;
 
   position:absolute;
-  background-position: top;
+  background-position: 50% 70%;
   background-size:cover;
   background-repeat: no-repeat;
   background-image: url("./fairyland-canyon.jpg");
@@ -212,10 +212,11 @@ header{
 
 .left-column{
   width:45%;
-  border:2px solid red;
+  /*border:2px solid red;*/
   height:90%;
   float:left;
   margin:2%;
+  position: relative;
 }
 
 .right-column{
@@ -241,32 +242,38 @@ header{
 }
 
 #skills-box{
-  width: 100%;
-  height: 80vh;
-  top: 5vh;
-  left: -50vw;
-  margin-top: 10%;
-  border: 2px white solid;
-  border-radius: 20px;
-  /*transition: left 2s;*/
-  display:flex;
-  align-content: space-between;
+  width:80%;
+  margin: 0 10% 0 10%;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  position:absolute;
+  background-image:
 }
 
-.skills{
-  height:100px;
-  width:250px;
-  /*background-color: red;
-  border: 2px solid black;*/
-  margin:2px;
-  background-size: cover;
-  background-position: center;
+#skills-box img{
+  padding:2%;
+}
+
+.left-column h1{
+  width:80%;
+  margin: 2% auto;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+ }
+
+.logo-row{
+  width:100%
+  height:120px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 @keyframes growshrink {
   0% {font-size:2em;}
-  50% {font-size:3em;}
+  50% {font-size:2.5em;}
   100% {font-size:2em;}
 }
 
