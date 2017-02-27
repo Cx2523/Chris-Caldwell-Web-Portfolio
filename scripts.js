@@ -17,7 +17,7 @@ $(document).ready(function(){
 
   addHexPic('hex-container-3', './screenshot 2.jpg', './code.jpg');
 
-  $('.front-4').append('<div class="intro-text">Hello World.<br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>');
+  $('.front-4').append('<div class="intro-text">Hello World.<br><br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>');
 
   //click rotation
   $('#down-link').on('click', downTransition);
