@@ -1,7 +1,4 @@
 $(document).ready(function(){
-  //d = sqrt 3 /2 D
-  // console.log($(window).width());
-  // console.log($(window).height());
 
   respHexCard("hex-container-1", "33%", "gray", "gray");
   respHexCard("hex-container-2", "33%", "gray", "gray");
@@ -15,9 +12,22 @@ $(document).ready(function(){
     $(this).toggleClass('flipped');
   });
 
-  addHexPic('hex-container-3', './screenshot 2.jpg', './code.jpg');
+  addHexPic('hex-container-3', './images/liftoff.jpg');
+  addHexPic('hex-container-2', './images/itsfrombit.png');
 
   $('.front-4').append('<div class="intro-text">Hello World.<br><br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>');
+
+  $('.back-1, .back-2, .back-3, .back-5, .back-6, .back-7').css({
+    'background-image':'radial-gradient(white,#43556B)'
+  });
+
+  //position for individual hexagon pics
+  $('.hexpic-front-3').css({"background-position": "center top"});
+  $('.hexpic-front-2').css({"background-position": "center top"});
+
+  //text for individial hexagons
+  $('.back-2').append('<div class="hexagon-text">This is a responsive front end design based primarily on features of the Bootstrap library. <br><br><a href="https://github.com/Cx2523" target="_blank">check it out</a></div>');
+
 
   //click rotation
   $('#down-link').on('click', downTransition);
@@ -25,7 +35,6 @@ $(document).ready(function(){
   $('#up-link').on('click', upTransition);
 
   //scrolling rotation
-  // var yRotate = 0;
   var currentRotationAngle;
 
   $(document).on('mousewheel', function(e){
@@ -145,9 +154,8 @@ function downTransition(){
 
 function addHexPic(hexClass, frontSidePic, backSidePic){
   var shapeId = hexClass.slice(13, hexClass.length);
-  console.log(shapeId);
   var shape = $('.' + hexClass);
-  console.log(shape.width());
+
   if(frontSidePic){
     $('.front' + shapeId).prepend("<div class='hexpic-front" + shapeId + "'></div>").css({
       "background-color":"transparent"
@@ -163,8 +171,7 @@ function addHexPic(hexClass, frontSidePic, backSidePic){
       "-o-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
       "-ms-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)", //reg hex
       "background-image" : "url('" + frontSidePic + "')",
-      "background-size" : "cover",
-      "background-position" : "55% 90%"
+      "background-size" : "cover"
     });
   }
   if(backSidePic){
