@@ -13,7 +13,7 @@ $(document).ready(function(){
   });
 
   addHexPic('hex-container-3', './images/liftoff.jpg');
-  addHexPic('hex-container-2', './images/itsfrombit.png');
+  addHexPic('hex-container-2', './images/itsandbits.png');
 
   $('.front-4').append('<div class="intro-text">Hello World.<br><br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>');
 
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
   //position for individual hexagon pics
   $('.hexpic-front-3').css({"background-position": "center top"});
-  $('.hexpic-front-2').css({"background-position": "center top"});
+  $('.hexpic-front-2').css({"background-position": "center 20%"});
 
   //text for individial hexagons
   $('.back-2').append('<div class="hexagon-text">This is a responsive front end design based primarily on features of the Bootstrap library. <br><br><a href="https://github.com/Cx2523" target="_blank">check it out</a></div>');
