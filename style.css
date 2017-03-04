@@ -27,7 +27,6 @@ div,section{
   width:90%;
   height:100%;
   margin: 0 auto;
-
 }
 
 #cube > section{
@@ -293,14 +292,18 @@ header{
 #resume-link{
   width:40%;
   height:100%;
-  float:left;
+  position:absolute;
+  float:right;
   text-align: center;
   padding-top:12%;
+  top:0;
+  right:0;
 }
 
 .right-column-upper{
   width:100%;
   height:60%;
+  position: relative;
 }
 
 .icon-links{

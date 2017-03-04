@@ -18,7 +18,7 @@ $(document).ready(function(){
   $('.front-4').append('<div class="intro-text">Hello World.<br><br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>');
 
   $('.back-1, .back-2, .back-3, .back-5, .back-6, .back-7').css({
-    'background-image':'radial-gradient(white,#43556B)'
+    'background-image':'radial-gradient(white, #7F9BCA)' //#43556B
   });
 
   //position for individual hexagon pics
