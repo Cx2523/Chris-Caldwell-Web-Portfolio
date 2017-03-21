@@ -220,18 +220,7 @@ header{
   margin:2%;
 }
 
-#pic{
-  height:100%;
-  width:40%;
-  background-image:url("./images/me.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position:absolute;
-  right: -500px;
-  bottom:0;
-  /*float:right;*/
 
-}
 
 #skills-box{
   width:80%;
@@ -287,23 +276,25 @@ header{
   line-height: 200%;
   margin:0;
   width:100%;
+  border:2px solid red;
+  position: relative;
 }
 
 #resume-link{
   width:40%;
-  height:100%;
-  position:absolute;
+  /*height:100%;*/
   float:right;
   text-align: center;
-  padding-top:12%;
-  top:0;
-  right:0;
+  margin:10px;
+  /*position: absolute;*/
+
 }
 
 .right-column-upper{
   width:100%;
   height:60%;
-  position: relative;
+  line-height: 200%;
+  /*position: relative;*/
 }
 
 .icon-links{
@@ -312,5 +303,17 @@ header{
   align-items: center;
   width:20%;
   height:100%;
-  float:left;
+  margin-left:40%;
+}
+
+#pic{
+  height:100%;
+  width:40%;
+  background-image:url("./images/me.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position:absolute;
+  right: -500px;
+  bottom:0;
+  /*float:right;*/
 }

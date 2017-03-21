@@ -55,12 +55,6 @@ $(document).ready(function(){
 
 });
 
-
-
-
-
-
-
 function scrollDownTransition(y){
   // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
