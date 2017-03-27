@@ -56,7 +56,8 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "-o-clip-path" : "inherit",
     "-ms-clip-path" : "inherit",
     "background-color": frontColor,
-    "position": "absolute"
+    "position": "absolute",
+    "cursor" : "pointer"
   });
 
   $('#' + classNames.hexCard + ' .' + classNames.backSide).css({
@@ -69,6 +70,7 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "-ms-clip-path" : "inherit",
     "background-color": backColor,
     "position": "absolute",
-    "transform" : "rotateY(180deg)"
+    "transform" : "rotateY(180deg)",
+    "cursor" : "pointer"
   })
 }

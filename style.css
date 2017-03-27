@@ -96,6 +96,10 @@ div,section{
   padding: 1%;
 }
 
+.more-info{
+  cursor:pointer;
+}
+
 .upper-section a:hover, .upper-section a:visited, .upper-section a:link, .upper-section a:active{
   text-decoration: none;
   color:white;
@@ -188,6 +192,7 @@ div,section{
   text-align:center;
   background-color: transparent;
   /*border:4px solid red;*/
+  cursor:pointer;
 
 }
 
@@ -200,6 +205,7 @@ header{
 
 #up-link{
   color:black;
+  cursor:pointer;
 }
 
 .left-column{
@@ -220,15 +226,12 @@ header{
   margin:2%;
 }
 
-
-
 #skills-box{
   width:80%;
   margin: 0 10% 0 10%;
-  border-bottom: 2px solid black;
+  /*border-bottom: 2px solid black;*/
   border-top: 2px solid black;
-  position:absolute;
-  background-image:
+  position:relative;
 }
 
 #skills-box img{
@@ -244,13 +247,23 @@ header{
  }
 
 .logo-row{
-  width:100%
+  width:100%;
   height:120px;
   display:flex;
   justify-content: center;
   align-items: center;
+  position:relative;
 }
 
+.logos-1{
+  left:-180%;
+}
+.logos-2{
+  left:-140%;
+}
+.logos-3{
+  left:-100%;
+}
 
 @keyframes growshrink {
   0% {font-size:2em;}
@@ -260,6 +273,18 @@ header{
 
 .fa-chevron-up, .fa-chevron-down{
   animation-name: growshrink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes growshrinkResume {
+  0% {font-size:4.8em;}
+  50% {font-size:5em;}
+  100% {font-size:4.8em;}
+}
+
+.fa-file{
+  animation-name: growshrinkResume;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
@@ -285,7 +310,7 @@ header{
   /*height:100%;*/
   float:right;
   text-align: center;
-  margin:10px;
+  margin:1%;
   /*position: absolute;*/
 
 }
@@ -294,7 +319,7 @@ header{
   width:100%;
   height:60%;
   line-height: 200%;
-  /*position: relative;*/
+  font-size: 20px;
 }
 
 .icon-links{

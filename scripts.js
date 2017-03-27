@@ -14,8 +14,10 @@ $(document).ready(function(){
 
   addHexPic('hex-container-3', './images/liftoff.jpg');
   addHexPic('hex-container-2', './images/itsandbits.png');
+  addHexPic('hex-container-1', './images/bitcoin app screenshot.png');
+  addHexPic('hex-container-5', './images/portfolio-site-screenshot.png');
 
-  $('.front-4').append('<div class="intro-text">Hello World.<br><br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>');
+  $('.front-4').append('<div class="intro-text">Hello World.<br><br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>').css({"cursor":"default"});
 
   $('.back-1, .back-2, .back-3, .back-5, .back-6, .back-7').css({
     'background-image':'radial-gradient(white, #7F9BCA)' //#43556B
@@ -58,7 +60,12 @@ $(document).ready(function(){
 function scrollDownTransition(y){
   // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
-    $('#skills-box').css('left', y / 90 * 60 - 60 + '%');
+    // $('#skills-box').css('left', y / 90 * 60 - 60 + '%');
+
+    $('.logos-1').css('left', y / 90 * 180 - 180 + '%');
+    $('.logos-2').css('left', y / 90 * 140 - 140 + '%');
+    $('.logos-3').css('left', y / 90 * 100 - 100 + '%');
+
     $('#pic').css('right', 500 * y / 90 - 500 + 'px');
     $('.upper-section').css('opacity', 1 - y / 90);
     $('.lower-section').css('opacity', y / 90);
@@ -67,7 +74,12 @@ function scrollDownTransition(y){
 function scrollUpTransition(y){
   // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
-    $('#skills-box').css('left', y / 90 * 60 - 60  + '%');
+
+    // $('#skills-box').css('left', y / 90 * 60 - 60  + '%');
+    $('.logos-1').css('left', y / 90 * 180 - 180 + '%');
+    $('.logos-2').css('left', y / 90 * 140 - 140 + '%');
+    $('.logos-3').css('left', y / 90 * 100 - 100 + '%');
+
     $('#pic').css('right', 500 * y / 90 - 500 + 'px');
     $('.upper-section').css('opacity', 1 - y / 90);
     $('.lower-section').css('opacity', y / 90);
@@ -79,10 +91,17 @@ function upTransition(){
     'transition':'transform 2s',
     'transform': 'rotateX(0deg)'
   });
-
-  $('#skills-box').css({
+  $('.logos-1').css({
     'transition':'left 2s',
-    'left': '-60%'
+    'left':'-180%'
+  });
+  $('.logos-2').css({
+    'transition':'left 2s',
+    'left':'-140%'
+  });
+  $('.logos-3').css({
+    'transition':'left 2s',
+    'left':'-100%'
   });
   $('#pic').css({
     'transition':'right 2s',
@@ -100,7 +119,7 @@ function upTransition(){
   setTimeout(
     function(){
       $('#cube').css('transition', 'transform 0s');
-      $('#skills-box').css('transition', 'left 0s');
+      $('.logos-1, .logos-2, .logos-3').css('transition', 'left 0s');
       $('#pic').css('transition', 'right 0s');
       $('.lower-section').css('transition', 'opacity 0s');
       $('.upper-section').css('transition', 'opacity 0s');
@@ -116,10 +135,12 @@ function downTransition(){
   });
 
   $('#cube').toggleClass('rotate');
-  $('#skills-box').css({
+
+  $('.logos-1, .logos-2, .logos-3').css({
     'transition':'left 2s',
     'left':'0'
   });
+
   $('#pic').css({
     'transition':'right 2s',
     'right':'0'
@@ -136,7 +157,7 @@ function downTransition(){
   setTimeout(
     function(){
       $('#cube').css('transition', 'transform 0s');
-      $('#skills-box').css('transition', 'left 0s');
+      $('.logos-1, .logos-2, .logos-3').css('transition', 'left 0s');
       $('#pic').css('transition', 'right 0s');
       $('.lower-section').css('transition', 'opacity 0s');
       $('.upper-section').css('transition', 'opacity 0s');
@@ -186,3 +207,5 @@ function addHexPic(hexClass, frontSidePic, backSidePic){
     });
   }
 }
+
+////////////////////////
