@@ -28,7 +28,9 @@ $(document).ready(function(){
   $('.hexpic-front-2').css({"background-position": "center 20%"});
 
   //text for individial hexagons
-  $('.back-2').append('<div class="hexagon-text">This is a responsive front end design based primarily on features of the Bootstrap library. <br><br><a href="https://github.com/Cx2523" target="_blank">check it out</a></div>');
+  $('.back-2').append('<div class="hexagon-text">This is a responsive front end design based primarily on features of the Bootstrap library. For practice I tried to use minimal JS.<br><br><a href="https://github.com/Cx2523/bootstrap-frontend" target="_blank">check it out</a></div>');
+  $('.back-5').append('<div class="hexagon-text">This is my portfolio site. For practice I created it using jQuery as the only additional JS library. <br><br><a href="https://github.com/Cx2523/Cx2523.github.io" target="_blank">check it out</a></div>');
+  $('.back-1').append('<div class="hexagon-text">This Angular JS app is a Bitcoin data dashboard. It uses custom directives and D3.js to create some charts. It makes calls to a bitcoin api to get the updated price every minute.<br><br><a href="https://github.com/Cx2523/bitcoin-data-tracker" target="_blank">check it out</a></div>');
 
 
   //click rotation
