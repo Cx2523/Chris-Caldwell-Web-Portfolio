@@ -1,6 +1,6 @@
 $(document).ready(function(){
   if(!(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase()))){
-   alert('To view this site in its full awesomeness, please use Google Chrome.');
+   alert('To view this site in its full awesomeness, please use Google Chrome. Cross-browser support is coming soon...');
   }
 
   respHexCard("hex-container-1", "33%", "gray", "gray");
