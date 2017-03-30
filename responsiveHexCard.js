@@ -74,3 +74,44 @@ function respHexCard(hexClass, width, backColor, frontColor){
     "cursor" : "pointer"
   })
 }
+
+function addHexPic(hexClass, frontSidePic, backSidePic){
+  var shapeId = hexClass.slice(13, hexClass.length);
+  var shape = $('.' + hexClass);
+
+  if(frontSidePic){
+    $('.front' + shapeId).prepend("<div class='hexpic-front" + shapeId + "'></div>").css({
+      "background-color":"transparent"
+    });
+
+    $('.hexpic-front' + shapeId).css({
+      "max-width" : shape.width(),
+      "height" : Math.round(2 / Math.sqrt(3) * shape.width()),
+      "position" : "relative",
+      "-webkit-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "-moz-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "-o-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "-ms-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)", //reg hex
+      "background-image" : "url('" + frontSidePic + "')",
+      "background-size" : "cover"
+    });
+  }
+  if(backSidePic){
+    $('.back' + shapeId).prepend("<div class='hexpic-back" + shapeId + "'></div>").css({
+      "background-color" : "transparent"
+    });
+    $('.hexpic-back' + shapeId).css({
+      "width" : shape.width(),
+      "height" : Math.round(2 / Math.sqrt(3) * shape.width()),
+      "position" : "relative",
+      "-webkit-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "-moz-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "-o-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "-ms-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
+      "background-image" : "url('" + backSidePic + "')",
+      "background-size" : "cover"
+    });
+  }
+}

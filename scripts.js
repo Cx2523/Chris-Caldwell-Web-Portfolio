@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  if(!(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase()))){
+   alert('To view this site in its full awesomeness, please use Google Chrome.');
+  }
 
   respHexCard("hex-container-1", "33%", "gray", "gray");
   respHexCard("hex-container-2", "33%", "gray", "gray");
@@ -16,8 +19,9 @@ $(document).ready(function(){
   addHexPic('hex-container-2', './images/itsandbits.png');
   addHexPic('hex-container-1', './images/bitcoin app screenshot.png');
   addHexPic('hex-container-5', './images/portfolio-site-screenshot.png');
+  addHexPic('hex-container-6', './images/react-app-screenshot.png');
 
-  $('.front-4').append('<div class="intro-text">Hello World.<br><br> My name is Chris Caldwell. This is my portfolio site which show projects I currently working on. Check em out.</div>').css({"cursor":"default"});
+  $('.front-4').append('<div class="intro-text"><br><p class="intro-header">Chris Caldwell<br> Web Developer</p><br><br>This is my portfolio site. Follow the links to see recent projects I have been working on. Scroll down or click for more information about me.</div>').css({"cursor":"default"});
 
   $('.back-1, .back-2, .back-3, .back-5, .back-6, .back-7').css({
     'background-image':'radial-gradient(white, #7F9BCA)' //#43556B
@@ -31,6 +35,8 @@ $(document).ready(function(){
   $('.back-2').append('<div class="hexagon-text">This is a responsive front end design based primarily on features of the Bootstrap library. For practice I tried to use minimal JS.<br><br><a href="https://github.com/Cx2523/bootstrap-frontend" target="_blank">check it out</a></div>');
   $('.back-5').append('<div class="hexagon-text">This is my portfolio site. For practice I created it using jQuery as the only additional JS library. <br><br><a href="https://github.com/Cx2523/Cx2523.github.io" target="_blank">check it out</a></div>');
   $('.back-1').append('<div class="hexagon-text">This Angular JS app is a Bitcoin data dashboard. It uses custom directives and D3.js to create some charts. It makes calls to a bitcoin api to get the updated price every minute.<br><br><a href="https://github.com/Cx2523/bitcoin-data-tracker" target="_blank">check it out</a></div>');
+  $('.back-6').append('<div class="hexagon-text">This is a basic React App which allows you to store items you have purchased over time and then create new shopping lists based on previous purchases.<br><br><a href="https://github.com/Cx2523/react-grocery-tracker" target="_blank">check it out</a></div>');
+  $('.back-3').append('<div class="hexagon-text">React video player App<br><br>Coming Soon</div>');
 
 
   //click rotation
@@ -60,28 +66,20 @@ $(document).ready(function(){
 });
 
 function scrollDownTransition(y){
-  // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
-    // $('#skills-box').css('left', y / 90 * 60 - 60 + '%');
-
     $('.logos-1').css('left', y / 90 * 180 - 180 + '%');
     $('.logos-2').css('left', y / 90 * 140 - 140 + '%');
     $('.logos-3').css('left', y / 90 * 100 - 100 + '%');
-
     $('#pic').css('right', 500 * y / 90 - 500 + 'px');
     $('.upper-section').css('opacity', 1 - y / 90);
     $('.lower-section').css('opacity', y / 90);
   }
 
 function scrollUpTransition(y){
-  // console.log("scroll down transition " + y);
     $('#cube').css('transform', 'rotateX(' + y + 'deg)');
-
-    // $('#skills-box').css('left', y / 90 * 60 - 60  + '%');
     $('.logos-1').css('left', y / 90 * 180 - 180 + '%');
     $('.logos-2').css('left', y / 90 * 140 - 140 + '%');
     $('.logos-3').css('left', y / 90 * 100 - 100 + '%');
-
     $('#pic').css('right', 500 * y / 90 - 500 + 'px');
     $('.upper-section').css('opacity', 1 - y / 90);
     $('.lower-section').css('opacity', y / 90);
@@ -164,50 +162,6 @@ function downTransition(){
       $('.lower-section').css('transition', 'opacity 0s');
       $('.upper-section').css('transition', 'opacity 0s');
     },2000);
-}
-
-
-
-
-function addHexPic(hexClass, frontSidePic, backSidePic){
-  var shapeId = hexClass.slice(13, hexClass.length);
-  var shape = $('.' + hexClass);
-
-  if(frontSidePic){
-    $('.front' + shapeId).prepend("<div class='hexpic-front" + shapeId + "'></div>").css({
-      "background-color":"transparent"
-    });
-
-    $('.hexpic-front' + shapeId).css({
-      "max-width" : shape.width(),
-      "height" : Math.round(2 / Math.sqrt(3) * shape.width()),
-      "position" : "relative",
-      "-webkit-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "-moz-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "-o-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "-ms-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)", //reg hex
-      "background-image" : "url('" + frontSidePic + "')",
-      "background-size" : "cover"
-    });
-  }
-  if(backSidePic){
-    $('.back' + shapeId).prepend("<div class='hexpic-back" + shapeId + "'></div>").css({
-      "background-color" : "transparent"
-    });
-    $('.hexpic-back' + shapeId).css({
-      "width" : shape.width(),
-      "height" : Math.round(2 / Math.sqrt(3) * shape.width()),
-      "position" : "relative",
-      "-webkit-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "-moz-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "-o-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "-ms-clip-path" : "polygon(50% 0%, 100% 20%, 100% 75%, 50% 100%, 0% 75%, 0% 20%)",
-      "background-image" : "url('" + backSidePic + "')",
-      "background-size" : "cover"
-    });
-  }
 }
 
 ////////////////////////
