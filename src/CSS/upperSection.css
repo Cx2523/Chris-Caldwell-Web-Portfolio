@@ -1,0 +1,46 @@
+#head-links{
+  width: 100%;
+  height:5%;
+  display:flex;
+  color: white;
+  justify-content: space-around;
+  font:15px;
+  margin: 0 auto;
+}
+
+.links{
+  width: 20%;
+  text-align: center;
+  font-size:1.3em;
+  padding: 1%;
+}
+
+.more-info{
+  cursor:pointer;
+}
+
+.upper-section a:hover, .upper-section a:visited, .upper-section a:link, .upper-section a:active{
+  text-decoration: none;
+  color:white;
+}
+
+.upper-section .hexagon-text a:hover, .upper-section .hexagon-text a:visited, .upper-section .hexagon-text a:link, .upper-section .hexagon-text a:active{
+  text-decoration: none;
+  color:black;
+}
+
+.upper-section a:hover, .upper-section .hexagon-text a:hover{
+  color: #61CBE0;
+  font-size:1.5em;
+}
+
+#down-link{
+  position:absolute;
+  bottom:1%;
+  width:100%;
+  height:4%;
+  color:white;
+  text-align:center;
+  background-color: transparent;
+  cursor:pointer;
+}

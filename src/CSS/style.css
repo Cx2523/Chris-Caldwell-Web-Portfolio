@@ -1,0 +1,29 @@
+body{
+  background-image: radial-gradient(lightblue, black);
+  width:100vw;
+  height:100vh;
+  margin:0px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+div,section{
+  box-sizing: border-box;
+}
+
+@keyframes growshrink {
+  0% {font-size:2em;}
+  50% {font-size:2.5em;}
+  100% {font-size:2em;}
+}
+
+@keyframes growshrinkResume {
+  0% {font-size:4.8em;}
+  50% {font-size:5em;}
+  100% {font-size:4.8em;}
+}
+
+.fa-chevron-up, .fa-chevron-down{
+  animation-name: growshrink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}

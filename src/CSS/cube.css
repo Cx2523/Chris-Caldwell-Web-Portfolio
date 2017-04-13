@@ -1,0 +1,53 @@
+.flip-container{
+  position:relative;
+  perspective: 2000px;
+  width:100%;
+  height:100%;
+}
+
+#cube{
+  transform-style: preserve-3d;
+  transform-origin: center center -50vh;
+  position: relative;
+  width:90%;
+  height:100%;
+  margin: 0 auto;
+}
+
+#cube > section{
+  display:block;
+  position:absolute;
+  border: 2px solid black;
+  backface-visibility: hidden;
+  width:100%;
+  height:100%;
+}
+
+#cube .upper-section{
+  transform: translateZ(0vh) rotateX(0deg);
+  background-color: black;
+  width:100%;
+  height:100%;
+  border:3px solid black;
+  position:absolute;
+  background-position: 50% 70%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-image: url("./images/fairyland-canyon.jpg");
+}
+
+#cube .lower-section{
+  transform: translateZ(-50vh) translateY(50vh) rotateX(-90deg);
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/SLC.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 3px solid lightblue;
+}
+
+.rotate{
+  transform: rotateX(90deg);
+}

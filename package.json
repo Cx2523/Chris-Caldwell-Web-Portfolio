@@ -1,0 +1,29 @@
+{
+  "name": "portfolio_site_ideas2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cx2523/portfolio_site_ideas2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cx2523/portfolio_site_ideas2/issues"
+  },
+  "homepage": "https://github.com/Cx2523/portfolio_site_ideas2#readme",
+  "dependencies": {
+    "browserify": "^14.3.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-open": "^2.0.0",
+    "jquery": "^3.2.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
