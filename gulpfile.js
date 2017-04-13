@@ -16,13 +16,13 @@ var config = {
     js:'./src/JS/main.js',
     css:'./src/CSS/*.css',
     images: './src/images/*',
-    dist:'./dist'
+    dist:'./docs'
   }
 }
 
 gulp.task('connect',function(){
   connect.server({
-    root:['dist'],
+    root:['docs'],
     port: config.port,
     base: config.devBaseUrl,
     livereload: true
@@ -30,7 +30,7 @@ gulp.task('connect',function(){
 });
 
 gulp.task('open', ['connect'], function(){
-  gulp.src('dist/index.html')
+  gulp.src('docs/index.html')
     .pipe(open({uri: config.devBaseUrl + ':' + config.port + '/', app: '/Applications/Google\ Chrome.app'}));
 });
 
