@@ -178,9 +178,12 @@ header{
   width:100%;
   height:80px;
   display:flex;
-  justify-content: left;
+  justify-content: space-around;
   align-items: center;
   position:relative;
+}
+#gulp{
+  margin-bottom: 10px;
 }
 
 .logos-1{

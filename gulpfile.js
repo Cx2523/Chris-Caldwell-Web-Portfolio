@@ -16,6 +16,7 @@ var config = {
     js:'./src/JS/main.js',
     css:'./src/CSS/*.css',
     images: './src/images/*',
+    gif: './src/gif/*',
     dist:'./docs'
   }
 }
@@ -56,6 +57,11 @@ gulp.task('css',function(){
     .pipe(connect.reload());
 });
 
+gulp.task('gif',function(){
+  gulp.src(config.paths.gif)
+    .pipe(gulp.dest(config.paths.dist + '/gif'));
+});
+
 gulp.task('imgMinify',function(){
   gulp.src(config.paths.images)
     .pipe(imagemin())
@@ -68,4 +74,4 @@ gulp.task('watch',function(){
   gulp.watch(config.paths.css, ['css']);
 });
 
-gulp.task('default', ['html', 'css', 'js', 'imgMinify', 'open', 'watch']);
+gulp.task('default', ['html', 'css', 'js', 'gif','imgMinify', 'open', 'watch']);
