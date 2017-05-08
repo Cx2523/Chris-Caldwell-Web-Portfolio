@@ -48,7 +48,7 @@ var app = $(document).ready(function(){
   $('.back-1').append('<div class="hexagon-text">This Angular JS app is a Bitcoin data dashboard. It uses custom directives and D3.js to create some charts. It makes calls to a bitcoin api to get the updated price every minute.<br><br><a href="https://github.com/Cx2523/bitcoin-data-tracker" target="_blank">check it out</a></div>');
   $('.back-6').append('<div class="hexagon-text">This is a basic React App which allows you to store items you have purchased over time and then create new shopping lists based on previous purchases.<br><br><a href="https://github.com/Cx2523/react-grocery-tracker" target="_blank">check it out</a></div>');
   $('.back-3').append('<div class="hexagon-text">React video player App<br><br>Coming Soon</div>');
-  $('.back-7').append('<div class="hexagon-text">Baseroids!<br><br>This is an implementation of the artificial life program Boids in Phaser.js.<br>Check it on my Codepen or on <a href="https://github.com/Cx2523/phaser-boids" target="_blank">Github</a>.</div>');
+  $('.back-7').append('<div class="hexagon-text">Baseroids!<br><br>This is an implementation of the artificial life program Boids in Phaser.js. Check it on my... <br><br><a href="http://codepen.io/-chris-/pen/JNMGoM" target="_blank">Codepen</a><br> or <br><a href="https://github.com/Cx2523/phaser-boids" target="_blank">Github</a>.</div>');
 
 
   //click rotation for cube
