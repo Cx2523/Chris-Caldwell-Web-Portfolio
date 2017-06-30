@@ -10493,10 +10493,10 @@ var app = $(document).ready(function(){
   });
 
   //add pictures to hexagon cards
-  flippinHexCard.addPic('hex-container-3', './images/liftoff.jpg');
+  flippinHexCard.addPic('hex-container-1', './images/react-shopping-tracker-2.png');
   flippinHexCard.addPic('hex-container-2', './images/itsandbits.png');
-  flippinHexCard.addPic('hex-container-1', './images/bitcoin app screenshot.png');
-  flippinHexCard.addPic('hex-container-5', './images/portfolio-site-screenshot.png');
+  flippinHexCard.addPic('hex-container-5', './images/bitcoin app screenshot.png');
+  flippinHexCard.addPic('hex-container-3', './images/portfolio-site-screenshot.png');
   flippinHexCard.addPic('hex-container-6', './images/react-app-screenshot.png');
   flippinHexCard.addPic('hex-container-7', './gif/boids.gif');
 
@@ -10513,10 +10513,10 @@ var app = $(document).ready(function(){
   //text for individual hexagons
   $('.front-4').append('<div class="intro-text"><br><p class="intro-header">Chris Caldwell<br> Web Developer</p><br><br>This is my portfolio site. Follow the links to see recent projects I have been working on. Scroll down or click for more information about me.</div>').css({"cursor":"default"});
   $('.back-2').append('<div class="hexagon-text">This is a responsive front end design based primarily on features of the Bootstrap library. For practice I tried to use minimal JS.<br><br><a href="https://github.com/Cx2523/bootstrap-frontend" target="_blank">check it out</a></div>');
-  $('.back-5').append('<div class="hexagon-text">This is my portfolio site. For practice I created it using jQuery as the only additional JS library. <br><br><a href="https://github.com/Cx2523/Chris-Caldwell-Web-Portfolio" target="_blank">check it out</a></div>');
-  $('.back-1').append('<div class="hexagon-text">This Angular JS app is a Bitcoin data dashboard. It uses custom directives and D3.js to create some charts. It makes calls to a bitcoin api to get the updated price every minute.<br><br><a href="https://github.com/Cx2523/bitcoin-data-tracker" target="_blank">check it out</a></div>');
+  $('.back-3').append('<div class="hexagon-text">This is my portfolio site. For practice I created it using jQuery as the only additional JS library. <br><br><a href="https://github.com/Cx2523/Chris-Caldwell-Web-Portfolio" target="_blank">check it out</a></div>');
+  $('.back-5').append('<div class="hexagon-text">This Angular JS app is a Bitcoin data dashboard. It uses custom directives and D3.js to create some charts. It makes calls to a bitcoin api to get the updated price every minute.<br><br><a href="https://github.com/Cx2523/bitcoin-data-tracker" target="_blank">check it out</a></div>');
   $('.back-6').append('<div class="hexagon-text">This is a basic React App which allows you to store items you have purchased over time and then create new shopping lists based on previous purchases.<br><br><a href="https://github.com/Cx2523/react-grocery-tracker" target="_blank">check it out</a></div>');
-  $('.back-3').append('<div class="hexagon-text">React video player App<br><br>Coming Soon</div>');
+  $('.back-1').append('<div class="hexagon-text">Shopping Tracker App 2.0, built with React, Semantic UI, and Webpack. <br><br><a href="http://react-shopping-tracker.herokuapp.com/">Check it out on Heroku</a><br><br><a href="http://github.com/Cx2523/react-grocery-tracker-2">GitHub</a></div>');
   $('.back-7').append('<div class="hexagon-text">Baseroids!<br><br>This is an implementation of the artificial life program Boids in Phaser.js. Check it on my... <br><br><a href="http://codepen.io/-chris-/pen/JNMGoM" target="_blank">Codepen</a><br> or <br><a href="https://github.com/Cx2523/phaser-boids" target="_blank">Github</a>.</div>');
 
 
