@@ -14,7 +14,7 @@ var app = $(document).ready(function(){
   flippinHexCard.create("hex-container-2", "33%");
   flippinHexCard.create("hex-container-3", "33%");
   flippinHexCard.create("hex-container-4", "33%", "transparent", "transparent");
-  flippinHexCard.create("hex-container-5", "33%");
+  flippinHexCard.create("hex-container-5", "32%");
   flippinHexCard.create("hex-container-6", "33%");
   flippinHexCard.create("hex-container-7", "33%", "gray", "gray");
 
